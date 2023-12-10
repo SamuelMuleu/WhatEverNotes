@@ -1,9 +1,9 @@
 import { Container } from "./styles";
 
-export function ButtonText({title,$iactive = false,...rest}){
+export function ButtonText({title,isActive =false,...rest}){
 return(
     <Container type="button"
-    $iactive={$iactive.toString()}
+    $isactive={isActive}
     {...rest}>
        {title}
     </Container>
